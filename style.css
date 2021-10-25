@@ -1,0 +1,99 @@
+/* Seletor universal para zerar todas as margens*/
+* {
+  margin: 0;
+}
+/*Centralizando o corpo da página*/
+html,
+body {
+  --gray: hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 3%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+/*Alinhando o corpo da página e colocando uma cor de fundo na página*/
+body {
+  display: grid;
+  place-items: center;
+  color: var(--gray);
+}
+
+/*centralizando o content do card*/
+main {
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+/*centralizando o content do card*/
+.content {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--gray);
+}
+/*alinhando o avatar*/
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+/*alinhando o selo da RocketSeat*/
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+/*alinhando o avatar em formato de polígono*/
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 74%,
+    100% 75%,
+    50% 100%,
+    0 75%,
+    0 25%
+  );
+}
+/*centralizando o titulo*/
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+/*estilizando os links*/
+a {
+  color: var(--gray);
+  text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/*alinhando o parágrafo*/
+p {
+  margin-top: 2rem;
+}
+
+/*alinhando os ícones das redes sociais*/
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
