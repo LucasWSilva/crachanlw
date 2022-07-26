@@ -1,5 +1,5 @@
 const linksSocialMedia = {
-  github: 'LucaSilva50',
+  github: 'LucasWSilva',
   youtube: 'channel/UCIhTJgDC3DFEMLbG78cwuEA',
   instagram: 'wilianlucas',
   facebook: 'lucas.wilian.35',
